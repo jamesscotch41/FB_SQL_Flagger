@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+        <Plugin>
+                <ShortDescription>FindBugs Plugin Tutorial Plugin</ShortDescription>
+                <Details>Provides detectors as part of the FindBugs detector plugin
+                        tutorial.</Details>
+        </Plugin>
+        <Detector class="tutorial.DetectorTutorial">
+                <Details>
+                        Finds instances of unsafe SQL operations
+                </Details>
+
+        </Detector>
+        <BugPattern type="TUTORIAL_BUG">
+                <ShortDescription>Initial Bug</ShortDescription>
+                <LongDescription>Initial Bug {1}</LongDescription>
+                <Details>
+<![CDATA[
+<p>This is just a placeholder</p>
+]]>
+                </Details>
+        </BugPattern>
+        <BugCode abbrev="TU">Tutorial</BugCode>
+</MessageCollection>
