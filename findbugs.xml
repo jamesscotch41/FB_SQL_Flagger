@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="findbugsplugin.xsd" 
+        pluginid="com.test.ExtraSQLStuff"
+        provider="James Scotch" 
+        website="https://github.com/jamesscotch41/FB_SQL_Flagger">
+
+        <Detector class="com.test.SQLExecuteFlagger" reports="TUTORIAL_BUG" />
+        <BugPattern type="TUTORIAL_BUG" abbrev="TU" category="CORRECTNESS"/>
+
+</FindbugsPlugin>
