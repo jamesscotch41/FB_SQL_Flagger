@@ -5,7 +5,7 @@
         provider="James Scotch" 
         website="https://github.com/jamesscotch41/FB_SQL_Flagger">
 
-        <Detector class="com.test.SQLExecuteFlagger" reports="TUTORIAL_BUG" />
-        <BugPattern type="TUTORIAL_BUG" abbrev="TU" category="CORRECTNESS"/>
+        <Detector class="com.test.SQLExecuteFlagger" reports="SQL_UNPREPARED_STATEMENT" />
+        <BugPattern type="SQL_UNPREPARED_STATEMENT" abbrev="SQL" category="SECURITY"/>
 
 </FindbugsPlugin>
