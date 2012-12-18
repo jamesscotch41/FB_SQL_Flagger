@@ -15,11 +15,11 @@ public class SQLExecuteFlagger extends OpcodeStackDetector {
 	@Override
 	public void sawOpcode(int arg0) {
 		if(arg0 == INVOKEINTERFACE) {
-			//if(getClassConstantOperand().equals("java/sql/statement")) {
-				//if(getNameConstantOperand().equals("execute") || getNameConstantOperand().equals("executeUpdate") || getNameConstantOperand().equals("executeQuery")) {
-					bugReporter.reportBug(new BugInstance(this, "TUTORIAL_BUG", HIGH_PRIORITY).addClassAndMethod(this).addSourceLine(this));
-				//}
-			//}
+			if(getClassConstantOperand().equals("java/sql/Statement")) {
+				if(getNameConstantOperand().equals("execute") || getNameConstantOperand().equals("executeUpdate") || getNameConstantOperand().equals("executeQuery")) {
+					bugReporter.reportBug(new BugInstance(this, "TUTORIAL_BUG", HIGH_PRIORITY).addClassAndMethod(this).addSourceLine(this));	
+				}
+			}
 		}
 		
 	}
