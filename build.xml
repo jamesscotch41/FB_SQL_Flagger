@@ -8,7 +8,7 @@
 	<property name="build" location="build" />
 	<property name="deploy" location="deploy" />
 
-	<target name="init">
+	<target name="init" depends="clean">
 		<!-- Create the time stamp -->
 		<tstamp />
 		<!-- Create the build directory structure used by compile -->
@@ -29,6 +29,14 @@
 	</target>
 
 	<target name="deploy" depends="compile" description="generate the distribution">
+		<copy todir="${build}">
+			<fileset dir=".">
+				<include name="findbugs.xml"/>
+				<include name="messages.xml"/>
+			</fileset>
+		</copy>
+			
+		
 		<!-- Create the distribution directory -->
 		<mkdir dir="${deploy}" />
 
