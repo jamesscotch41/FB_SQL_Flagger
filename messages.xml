@@ -14,10 +14,10 @@
         </Detector>
         <BugPattern type="SQL_UNPREPARED_STATEMENT">
                 <ShortDescription>Un-Prepared SQL Statement</ShortDescription>
-                <LongDescription>Initial Bug {1}</LongDescription>
+                <LongDescription>Possibly Unsafe {1}</LongDescription>
                 <Details>
 <![CDATA[
-<p>This is just a placeholder</p>
+<p>This could be a problem if the SQL query string is build dynamically including user input.  Could be nothing.  If the string is a constant, you could use a PreparedStatement.</p>
 ]]>
                 </Details>
         </BugPattern>
