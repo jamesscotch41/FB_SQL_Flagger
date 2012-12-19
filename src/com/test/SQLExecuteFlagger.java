@@ -17,7 +17,7 @@ public class SQLExecuteFlagger extends OpcodeStackDetector {
 		if(arg0 == INVOKEINTERFACE) {
 			if(getClassConstantOperand().equals("java/sql/Statement")) {
 				if(getNameConstantOperand().equals("execute") || getNameConstantOperand().equals("executeUpdate") || getNameConstantOperand().equals("executeQuery")) {
-					bugReporter.reportBug(new BugInstance(this, "SQL_UNPREPARED_STATEMENT", LOW_PRIORITY).addClassAndMethod(this).addSourceLine(this));	
+					bugReporter.reportBug(new BugInstance(this, "SQL_UNPREPARED_STATEMENT", NORMAL_PRIORITY).addClassAndMethod(this).addSourceLine(this));	
 				}
 			}
 		}
