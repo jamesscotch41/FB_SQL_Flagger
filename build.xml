@@ -30,7 +30,7 @@
 
 	<target name="deploy" depends="compile" description="generate the distribution">
 		<copy todir="${build}">
-			<fileset dir=".">
+			<fileset dir="./resources">
 				<include name="findbugs.xml"/>
 				<include name="messages.xml"/>
 			</fileset>
