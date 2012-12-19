@@ -6,7 +6,7 @@
                 <Details>Provides detectors as part of the FindBugs detector plugin
                         tutorial.</Details>
         </Plugin>
-        <Detector class="com.test.SQLExecuteFlagger">
+        <Detector class="com.noorg.findbugs.plugin.sql.FindSQLIssues">
                 <Details>
                         Finds instances of unsafe SQL operations
                 </Details>

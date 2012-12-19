@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="findbugsplugin.xsd" 
-        pluginid="com.test.ExtraSQLStuff"
+        pluginid="com.noorg.findbugs.plugin.sql.FindSQLIssues"
         provider="James Scotch" 
         website="https://github.com/jamesscotch41/FB_SQL_Flagger">
 
-        <Detector class="com.test.SQLExecuteFlagger" reports="SQL_UNPREPARED_STATEMENT" />
+        <Detector class="com.noorg.findbugs.plugin.sql.FindSQLIssues" reports="SQL_UNPREPARED_STATEMENT" />
         <BugPattern type="SQL_UNPREPARED_STATEMENT" abbrev="SQL" category="SECURITY"/>
 
 </FindbugsPlugin>
