@@ -17,7 +17,7 @@
                 <LongDescription>Possibly Unsafe {1}</LongDescription>
                 <Details>
 <![CDATA[
-<p>This could be a problem if the SQL query string is build dynamically including user input.  Could be nothing.  Look to see if it can be made into a prepared statement.</p>
+<p>This could be a problem if the SQL query string is built dynamically including user input.  Could be nothing.  Look to see if it can be made into a prepared statement.</p>
 ]]>
                 </Details>
         </BugPattern>
