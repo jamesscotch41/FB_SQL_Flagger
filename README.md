@@ -17,6 +17,6 @@ Necessary External Resources
 
 ###To Build
 - There are 3 necessary external jars to build the project.
-- They are located in the lib directory of the Find_Bugs.
+- They are located in the lib directory of FindBugs.
 - They are named in the .classpath file of this project.
 - Create a lib directory for this project and put those jars into it.
