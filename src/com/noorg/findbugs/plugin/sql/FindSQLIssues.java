@@ -1,5 +1,5 @@
 /*
- * FindBugs - Find bugs in Java programs
+ * FB_SQL_Flagger
  * Copyright (C) 2012, James Scotch
  *
  * This library is free software; you can redistribute it and/or
