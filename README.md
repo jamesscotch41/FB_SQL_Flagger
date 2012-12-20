@@ -5,6 +5,7 @@ FindBugs Plugin, flags potentially unsafe non-prepared SQL statements
 
 Contains a jar to drop into FindBugs, and an Eclipse project to build the jar.
 
+Usable jar located in 'dist'
 
 Necessary External Resources
 ----------------------------
