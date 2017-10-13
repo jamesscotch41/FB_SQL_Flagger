@@ -10,12 +10,12 @@ Usable jar located in 'dist'
 Necessary External Resources
 ----------------------------
 
-###To Run The Plugin
+### To Run The Plugin
 - A working copy of FindBugs
 - This was last tested against 2.0.2
 - Copy the FB_SQL_Flagger.jar file into the {FindBugs_root_dir}/plugin directory and start FindBugs
 
-###To Build
+### To Build
 - There are 3 necessary external jars to build the project.
 - They are located in the lib directory of FindBugs.
 - They are named in the .classpath file of this project.
